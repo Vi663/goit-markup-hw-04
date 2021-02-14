@@ -120,6 +120,7 @@ main {
   list-style: none;
   margin-bottom: 34px;
   padding-bottom: 16px;
+  font-family: inherit;
 }
 
 .buttons :not(:first-child) {
@@ -128,6 +129,13 @@ main {
 
 .buttons :not(:last-child) {
   margin-right: 15px;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 .button {
@@ -139,10 +147,6 @@ main {
   list-style: none;
   position: relative;
   text-decoration: none;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
 
   /* identical to box height, or 162% */
   text-align: center;
