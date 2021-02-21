@@ -23,11 +23,16 @@ header {
   font-family: 'Roboto', sans-serif;
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ECECEC;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+body{
+  margin: 0px;
 }
 
 main {
@@ -96,7 +101,7 @@ main {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  margin top: -30px;
+  margin-top: -20px;
 }
 
 .contacts-header :first-child{
