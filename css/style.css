@@ -127,6 +127,14 @@ main {
   padding-bottom: 200px;
 }
 
+.hero-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 696px;
+}
+
 /* portfolio */
 .buttons {
   display: flex;
@@ -230,11 +238,14 @@ button {
 }
 
 .title {
+  display: inline-flex;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
   padding-bottom: 30px;
   padding-top: 200px;
+  margin: 0px;
+  min-width: 696px;
 
   /* or 136% */
   text-align: center;
@@ -306,7 +317,7 @@ button {
   max-width: 1170px;
   margin: 0px 215px;
   list-style: none;
-  padding: 94px 0px;
+  padding-left: 0px;
 
   /* or 171% */
   color: var(--gray-text);
@@ -324,8 +335,9 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--black-text);
-  max-height: 16px;
-  width: 270px;
+  margin: 0px;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .feature-item {
@@ -334,7 +346,7 @@ button {
   margin-top: 0px;
   font-size: 14px;
   line-height: 24px;
-
+  margin: 0px;
   /* or 171% */
   letter-spacing: 0.03em;
 }
@@ -361,6 +373,7 @@ button {
   color: var(--black-text);
   margin: 0px;
   padding-bottom: 50px;
+  padding-top: 94px;
 }
 
 .boxes {
@@ -369,7 +382,8 @@ button {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-left: 0;
+  padding-left: 0px;
+  margin: 0px;
 }
 
 .boxes :not(:first-child) {
@@ -385,7 +399,7 @@ button {
 }
 
 .team {
-  margin-top: 94px;
+  margin: 0px;
   margin-bottom: 94px;
   max-width: 1600px;
 }
@@ -395,7 +409,7 @@ button {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  margin-left: 215px;
+  margin: 0px 0px 0px 215px;
   padding-left: 0px;
   
   /* flex-basis: calc(100% / 4 - 30px); */
@@ -445,6 +459,7 @@ button {
   line-height: 19px;
   padding-bottom: 30px;
   padding-top: 10px;
+  margin-left: 0px;
 
   /* identical to box height */
   text-align: center;
@@ -453,7 +468,13 @@ button {
   margin: 0px;
 }
 
+.companys {
+  display: flex;
+  list-style: none;
+}
+
 footer {
+  display: flex;
   background-color: #2f303a;
   color: var(--white-text);
   padding-top: 60px;
@@ -491,4 +512,25 @@ address {
 
 .contacts {
   color: var(--gray-text);
+}
+
+.social-media-container {
+  display: flex;
+  padding-left: 70px;
+  padding-top: 12px;
+}
+
+.text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text);
+  }
+
+.social-media-item {
+  display: flex;
+  list-style: none;
 }
