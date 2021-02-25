@@ -125,7 +125,15 @@ main {
   max-width: 1600px;
   max-height: 600px;
   padding-bottom: 200px;
-  background-image: url(/images/hero.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+  ),
+    url(/images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   
 }
 
@@ -349,6 +357,7 @@ button {
   font-size: 14px;
   line-height: 24px;
   margin: 0px;
+  
   /* or 171% */
   letter-spacing: 0.03em;
 }
@@ -530,7 +539,7 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-text);
-  }
+}
 
 .social-media-item {
   display: flex;
