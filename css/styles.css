@@ -330,7 +330,7 @@ button {
   margin: 0;
 }
 
-.features-container {
+.features-container .features {
   display: inline-flex;
   flex-direction: row;
   justify-content: space-between;
@@ -345,8 +345,12 @@ button {
 }
 
 .feature {
-  display: block;
+  display: inline-block;
 
+}
+
+.feature:not(:first-child) {
+  margin-left: 30px;
 }
 
 .title3 {
@@ -372,12 +376,8 @@ button {
   letter-spacing: 0.03em;
 }
 
-.feature-item:not(last-child) {
-  margin-right: 15px;
-}
-
-.feature-item :not(first-child) {
-  padding-left: 15px;
+.feature-item :not(:first-child) {
+  margin-left: 30px;
 }
 
 .work {
