@@ -212,7 +212,7 @@ button {
 }
 
 .team-container {
-  display: flex inline-block;
+  display: inline-block;
   flex-wrap: wrap;
   justify-content: center;
   background-color: var(--button-bg-non-active);
@@ -381,8 +381,10 @@ button {
 }
 
 .work {
+  display: inline-block;
+  align-items: center;
   max-width: 1170px;
-  margin-left: 215px;
+  padding-bottom: 94px;
 }
 
 .title2 {
@@ -395,6 +397,7 @@ button {
   margin: 0px;
   padding-bottom: 50px;
   padding-top: 94px;
+  min-width: 1700px;
 }
 
 .boxes {
@@ -403,16 +406,12 @@ button {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-left: 0px;
+  padding: 0px 215px;
   margin: 0px;
 }
 
 .boxes :not(:first-child) {
-  padding-left: 15px;
-}
-
-.boxes :not(:last-child) {
-  padding-right: 15px;
+  padding-left: 30px;
 }
 
 .box-image {
