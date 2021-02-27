@@ -215,6 +215,9 @@ button {
   display: flex inline-block;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: var(--button-bg-non-active);
+  min-width: 1600px;
+  padding-bottom: 94px;
 }
 
 /* portfollio */
