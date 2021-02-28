@@ -17,6 +17,7 @@
   --elements-gray: #2f303a;
   --button-bg-non-active: #F5F4FA;
   --button-bg-active: #2196F3;
+  --icon-non-active: #AFB1B8;
 }
 
 body{
@@ -209,6 +210,7 @@ button {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .team-container {
@@ -228,7 +230,7 @@ button {
   flex-direction: column;
   align-items: center;
   padding-inline-start: 0px;
-  padding-bottom: 64px;
+  padding-bottom: 94px;
   margin: 0px;
 }
 
@@ -240,8 +242,6 @@ button {
   border-radius: 0px;
   background-color: #FFFFFF;
   border: 1px solid #EEEEEE;
-  margin-bottom: 30px;
-
 }
 
 .card:not(:first-child) {
@@ -300,7 +300,11 @@ button {
 
 /* portfollio */
 .container {
-  margin: 20px 24px;
+  padding: 20px 24px;
+}
+
+.cards>:last-child {
+  margin-bottom: 0px;
 }
 
 /* portfollio */
@@ -308,7 +312,8 @@ button {
   color: var(--black-text);
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 4px;
+  padding-bottom: 4px;
+  margin: 0px;
 }
 
 /* portfollio */
@@ -430,8 +435,6 @@ button {
   flex-wrap: nowrap;
   margin: 0px;
   padding-left: 215px;
-  
-  /* flex-basis: calc(100% / 4 - 30px); */
 }
 
 .team-card {
@@ -479,10 +482,46 @@ button {
   margin: 0px;
 }
 
+.companys li {
+  list-style: none;
+  outline: 2px solid;
+}
+
 .companys {
   display: flex;
-  list-style: none;
+  flex-wrap: nowrap;
   margin: 0px;
+  padding: 50px 215px 94px 215px;
+}
+
+.company {
+  display: flex;
+  justify-content: space-between;
+  color: var(--icon-non-active);
+}
+
+.company-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+}
+
+.company:not(:first-child) {
+  margin-left: 30px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-logo .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
