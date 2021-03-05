@@ -37,19 +37,21 @@ main {
 }
 
 .header {
+  font-family: 'Roboto', sans-serif;
+  padding: 24px 0px 25px;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.header-container {
   width: 1200px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Roboto', sans-serif;
-  padding: 24px 0px 25px;
-  border-bottom: 1px solid #ECECEC;
-
 }
 
 .navigation{
@@ -450,6 +452,8 @@ section > .main-container:last-child {
   justify-content: center;
   background-color: var(--button-bg-non-active);
   padding-bottom: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .team-cont {
@@ -458,8 +462,6 @@ section > .main-container:last-child {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  padding-left: 15px;
-  padding-right: 15px;
   margin: 0px;
 
 }
