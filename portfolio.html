@@ -45,18 +45,19 @@
     <main>
       <!--buttons-->
       <section>
-        <ul class="buttons">
-          <li class="button-item"><button class="button" type="button">Все</button></li>
-          <li class="button-item"><button class="button" type="button">Веб-сайты</button></li>
-          <li class="button-item"><button class="button" type="button">Приложения</button></li>
-          <li class="button-item"><button class="button" type="button">Дизайн</button></li>
-          <li class="button-item"><button class="button" type="button">Маркетинг</button></li>
-        </ul>
-        <!--cards-->
         <div class="main-container">
-          <ul class="cards">
+          <ul class="buttons">
+            <li class="button-item"><button class="button" type="button">Все</button></li>
+            <li class="button-item"><button class="button" type="button">Веб-сайты</button></li>
+            <li class="button-item"><button class="button" type="button">Приложения</button></li>
+            <li class="button-item"><button class="button" type="button">Дизайн</button></li>
+            <li class="button-item"><button class="button" type="button">Маркетинг</button></li>
+          </ul>
+          <!--cards-->
+          <div class="cards">
+
             <!--card1-->
-            <li class="card">
+            <div class="card">
               <img class="picture" src="./images/img1.jpg" alt="Технокряк" width="370" height="294" />
               <a>
                 <div class="container">
@@ -66,10 +67,10 @@
                   <span class="description">Веб-сайт</span>
                 </div>
               </a>
-            </li>
+            </div>
 
             <!--card2-->
-            <li class="card">
+            <div class="card">
               <img class="picture" src="./images/img2.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294" />
               <a>
                 <div class="container">
@@ -79,10 +80,10 @@
                   <span class="description">Дизайн</span>
                 </div>
               </a>
-            </li>
-            
+            </div>
+
             <!--card3-->
-            <li class="card">
+            <div class="card">
               <img class="picture" src="./images/img3.jpg" alt="Ресторан Seafood" width="370" height="294" />
               <a>
                 <div class="container">
@@ -90,16 +91,12 @@
                   <h3 class="project">Ресторан Seafood</h3>
                   <!--description-->
                   <span class="description">Приложение</span>
-              </div>
+                </div>
               </a>
-            </li>
-          </ul>
-        </div>
+            </div>
 
-        <div class="main-container">
-          <ul class="cards">
             <!--card4-->
-            <li class="card">
+            <div class="card">
               <img class="picture" src="./images/img4.jpg" alt="Проект Prime" width="370" height="294" />
               <a>
                 <div class="container">
@@ -109,10 +106,10 @@
                   <span class="description">Маркетинг</span>
                 </div>
               </a>
-            </li>
-            
+            </div>
+
             <!--card5-->
-            <li class="card">
+            <div class="card">
               <img class="picture" src="./images/img5.jpg" alt="Проект Boxes" width="370" height="294" />
               <a>
                 <div class="container">
@@ -122,10 +119,10 @@
                   <span class="description">Приложение</span>
                 </div>
               </a>
-            </li>
+            </div>
 
             <!--card6-->
-            <li class="card">
+            <div class="card">
               <img class="picture" src="./images/img6.jpg" alt="Inspiration has no Borders" width="370" height="294" />
               <a>
                 <div class="container">
@@ -135,14 +132,10 @@
                   <span class="description">Веб-сайт</span>
                 </div>
               </a>
-            </li>
-          </ul>
-        </div>
+            </div>
 
-        <div class="main-container">
-          <ul class="cards">
             <!--card7-->
-            <li class="card">
+            <div class="card">
               <img class="picture" src="./images/img7.jpg" alt="Издание Limited Edition" width="370" height="294" />
               <a>
                 <div class="container">
@@ -152,23 +145,23 @@
                   <span class="description">Дизайн</span>
                 </div>
               </a>
-            </li>
-            
+            </div>
+
             <!--card8-->
-            <li class="card">
-                <img class="picture" src="./images/img8.jpg" alt="Проект LAB" width="370" height="294" />
-                <a>
-                  <div class="container">
-                    <!--name-->
-                    <h3 class="project">Проект LAB</h3>
-                    <!--description-->
-                    <span class="description">Маркетинг</span>
-                  </div>
-                </a>
-            </li>
+            <div class="card">
+              <img class="picture" src="./images/img8.jpg" alt="Проект LAB" width="370" height="294" />
+              <a>
+                <div class="container">
+                  <!--name-->
+                  <h3 class="project">Проект LAB</h3>
+                  <!--description-->
+                  <span class="description">Маркетинг</span>
+                </div>
+              </a>
+            </div>
 
             <!--card9-->
-            <li class="card">
+            <div class="card">
               <img class="picture" src="./images/img9.jpg" alt="Growing Business" width="370" height="294" />
               <a>
                 <div class="container">
@@ -178,29 +171,31 @@
                   <span class="description">Приложение</span>
                 </div>
               </a>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </section>
     </main>
     
     <!--bottom-->
-    <footer>
-      <div class="contacts-footer">
-        <a class="web" href="./index.html">Web<span class="logo footer">Studio</span></a>
-        <address class="address" id="contacts">
-          г. Киев, пр-т Леси Украинки, 26 <br />
-          <a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a> <br />
-          <a class="contacts" href="tel:+380961111111">+38 096 111 11 11</a>
-        </address>
-      </div>
-      
-      <div class="social-media-container">
-        <span class="text">присоединяйтесь</span>
-        <a class="social-media-item"></a>
-        <a class="social-media-item"></a>
-        <a class="social-media-item"></a>
-        <a class="social-media-item"></a>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="contacts-footer">
+          <a class="web" href="./index.html">Web<span class="logo footer">Studio</span></a>
+          <address class="address" id="contacts">
+            г. Киев, пр-т Леси Украинки, 26 <br />
+            <a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a> <br />
+            <a class="contacts" href="tel:+380961111111">+38 096 111 11 11</a>
+          </address>
+        </div>
+        
+        <div class="social-media-container">
+          <span class="text">присоединяйтесь</span>
+          <a class="social-media-item"></a>
+          <a class="social-media-item"></a>
+          <a class="social-media-item"></a>
+          <a class="social-media-item"></a>
+        </div>
       </div>
     </footer>
   </body>
