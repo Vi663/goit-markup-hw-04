@@ -103,7 +103,8 @@ main {
 }
 
 .contacts-container {
-  display: block;
+  display: flex;
+  flex-direction: row;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -111,22 +112,21 @@ main {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-
+  align-items: center;
+  justify-content: center;
 }
 
 .contacts-header {
   list-style: none;
   margin: 0;
   padding: 0;
-
+  align-items: center;
+  justify-content: center;
 }
 
 .list-item {
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   margin-left: 30px;
+  
 }
 
 .list-item:hover,
@@ -142,8 +142,19 @@ main {
 }
 
 .mail {
-  width: 16px;
-  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: currentColor;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   fill: currentColor;
   background-repeat: no-repeat;
   background-size: contain;
@@ -151,10 +162,13 @@ main {
 }
 
 .contacts-icon {
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
   color: var(--gray-text);
   margin: 0px;
-  padding-right: 10px;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 .section {
