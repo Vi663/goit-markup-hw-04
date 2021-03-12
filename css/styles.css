@@ -635,12 +635,11 @@ button {
   justify-content: center;
   align-items: center;
 }
-}
 
 .company > .company-logo {
   display: flex;
   justify-content: center;
-  
+}
 
 .company-link {
   display: block;
@@ -659,10 +658,6 @@ button {
 
 .company:not(:first-child) {
   margin-left: 30px;
-}
-
-.icon {
-  
 }
 
 .company .icon {
@@ -733,26 +728,27 @@ button {
 }
 
 .social-media {
+  list-style: none;
   display: block;
+  width: 44px;
+  height: 44px;
   padding: 0px;
-  fill: currentColor;
-  align-items: center;
-  justify-content: center;
   
 }
 
 .social-media-item {
+  list-style: none;
+  display: block;
   width: 44px;
   height: 44px;
+  fill: currentColor;
+  align-items: center;
+  justify-content: center;
   margin-right: 10px;
   border-radius: 50px;
   background-repeat: no-repeat;
   background-size: contain;
   background-color: rgba(255, 255, 255, 0.1);
-  align-items: center;
-  justify-content: center;
-
-  /* background-color: var(--white-text); */
 }
 
 .social-media-item:hover,
