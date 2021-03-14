@@ -129,8 +129,8 @@ main {
   
 }
 
-.list-item:hover,
-.list-item:focus {
+.list-item :hover,
+.list-item :focus {
   color: var(--blue-text);
   outline: none;
 }
@@ -149,6 +149,11 @@ main {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+.mail:focus,
+.mail :hover {
+  color: var(--blue-text);
 }
 
 .phone {
@@ -223,23 +228,18 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   list-style: none;
+  margin: 0px;
   padding-top: 94px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0px;
-}
-
-/* portfolio */
-.buttons :not(:first-child) {
-  margin-left: 15px;
 }
 
 /* portfolio */
 .buttons :not(:last-child) {
-  margin-right: 15px;
+  margin-right: 8px;
 }
 
 button {
@@ -656,14 +656,17 @@ button {
   display: flex;
   justify-content: center;
 } */
-
-/* .company-link {
-  display: flex;
-  justify-content: center;
+/* 
+.company-link {
+  width: 100%;
+  height: 100%;
 } */
 
 .company-logo {
   fill: currentColor;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
 .company-logo:hover {
@@ -675,6 +678,7 @@ button {
 }
 
 .company .icon {
+
   /* background-size: contain;
   background-repeat: no-repeat;
   background-position: center; */
@@ -748,41 +752,59 @@ button {
   margin: 0;
   padding: 0;
   color: var(--icon-non-active);
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
   padding-top: 20px;
 }
 
 .social-media {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
   list-style: none;
   padding: 0px;
+}
+
+li.social-media {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
 }
 
 .social-media-link {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.social-media-item {
-  width: 40px;
-  height: 40px;
-  fill: currentColor;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social-media-icon {
-  
+.social-media-item {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
+
+/* .social-media-icon {
+  
+} */
 
 .social-media:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-media-item:hover,
-.social-media-item:focus {
-  background-color: var(--button-bg-active);
+.social-media-link:hover,
+.social-media-link:focus {
   fill: var(--white-text);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--button-bg-active);
+  border: 0;
+  outline: none;
 }
+
+/* .social-media: */
