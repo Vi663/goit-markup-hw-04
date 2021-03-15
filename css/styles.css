@@ -139,6 +139,7 @@ svg path {
 .list-item :focus {
   color: var(--blue-text);
   outline: none;
+  fill: var(--blue-text);
 }
 
 .list-item {
