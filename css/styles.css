@@ -640,7 +640,8 @@ button {
   list-style: none;
 }
 
-.company:hover {
+.company:hover,
+.company-link+.company:focus {
   border: 1px solid var(--button-bg-active);
   color: var(--button-bg-active);
   fill: var(--button-bg-active);
