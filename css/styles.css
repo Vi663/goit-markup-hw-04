@@ -36,6 +36,12 @@ main {
 
 }
 
+svg path {
+  stroke: inherit;
+  stroke-width: inherit;
+  fill: inherit;
+}
+
 .header {
   font-family: 'Roboto', sans-serif;
   padding: 24px 0px 25px;
@@ -315,7 +321,6 @@ button {
   border: 1px solid #EEEEEE;
   margin: 15px;
   width: 370px;
-  
   max-height: 404px;
   max-width: 370px;
   border-radius: 0px;
@@ -329,8 +334,7 @@ button {
   margin-right: 30px;
 } */
 
-.card:hover,
-.card:focus {
+.card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
   outline: none;
@@ -376,7 +380,6 @@ button {
   display: block;
   padding: 20px 24px;
 }
-
 
 /* portfollio */
 .project {
@@ -639,6 +642,13 @@ button {
 
 .company:hover {
   border: 1px solid var(--button-bg-active);
+  color: var(--button-bg-active);
+  fill: var(--button-bg-active);
+}
+
+.company-link:focus {
+  color: var(--button-bg-active);
+  fill: var(--button-bg-active);
 }
 
 .company {
@@ -669,7 +679,8 @@ button {
   align-content: center;
 }
 
-.company-logo:hover {
+.company-logo :hover {
+  color: var(--button-bg-active);
   fill: var(--button-bg-active);
 }
 
@@ -798,13 +809,21 @@ li.social-media {
   margin-right: 10px;
 }
 
-.social-media-link:hover,
-.social-media-link:focus {
+.social-media:hover,
+.social-media :focus {
+  color: var(--white-text);
   fill: var(--white-text);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: var(--button-bg-active);
   border: 0;
   outline: none;
+}
+
+.social-media-link:hover,
+.social-media-link :focus {
+  color: var(--white-text);
+  fill: var(--white-text);
+  background-color: var(--button-bg-active);
 }
 
 /* .social-media: */
