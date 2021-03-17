@@ -445,7 +445,7 @@ button {
 
 }
 
-.icon-antenna::before {
+/* .icon-antenna::before {
   display: block;
   height: 120px;
   content: "";
@@ -475,7 +475,7 @@ button {
   background-position: center;
 }
 
-.icon-astronaut::before {
+ .icon-astronaut::before {
   display: block;
   height: 120px;
   content: "";
@@ -483,10 +483,25 @@ button {
   background-image: url("../images/svg/astronaut.svg");
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 
 .feature:not(:first-child) {
   margin-left: 30px;
+}
+
+.feature-icon {
+  display: flex;
+  height: 120px;
+  background-color: var(--button-bg-non-active);
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature.icon {
+  width: 70px;
+  height: 70px;
 }
 
 .title3 {
